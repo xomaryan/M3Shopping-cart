@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: rgb(255, 255, 255);
+    --main-color: rgb(224, 224, 224);
+    --secondary-color: rgb(122, 118, 118);   
+    --tekst-color-nav: rgb(255, 0, 0);
+    --button: rgb(255, 207, 0);
+    --text-color-button: rgb(0, 0, 0);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;  /* Zorg ervoor dat de items in de navigatie aan de zijkanten worden geplaatst. */
+    align-items: center;
+    padding: 20px 5px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px var(--main-color);
+}
+
+.logo {
+    font-size: 35px;
+    margin: 10px;
+    font-weight: bold;
+    color: var(--tekst-color-nav);
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 25px;
+    margin: 10px;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;  /* Hier heb ik 20 px afstand tusen de navigatielinks toegevoegd, zodat ze niet te dicht op elkaar staan. */
+}
+
+.hr {
+    border: none;
+    height: 2px;
+    margin: 15px 0;
+    background-color: var(--main-color);
+    box-shadow: 0 2px 4px var(--main-color);
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.cta-img {
+    width: 800px;
+    height: 600px;
+    padding: 10px;
+}
+.cta-h1 {
+    position: absolute;
+    font-size: 46px;
+    font-weight: bold;
+    color: var(--background-color);
+    text-shadow: 1px 1px 1px var(--text-color-button);
+    top: 120px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: var(--button);
+    color: var(--text-color-button);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s; 
+    position: absolute;
+    top: 560px;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+.h2{
+    color: var(--secondary-color);
+}
+.producten-container {
+    padding: 50px 5%;
+}
+
+.producten-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Hier heb ik een grid gemaakr die automatisch het aantal kolommen aanpast op basis van de beschikbare ruimte. De minimum breedt van elke kolom is 300px, en de maximum breedte is 1fr. */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.product-card {
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-button {
+    transition: transform 0.3s;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: var(--button);
+    color: var(--text-color-button);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-button:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center; 
+    gap: 15px;               
+    margin: 20px;          
+    flex-wrap: wrap;   
+}
+
+.filters button {
+    background-color: var(--background-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;  
+    padding: 20px;      
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;           /* Verandert de muis in een handje */
+    transition: all 0.3s ease; /* Zorgt voor een vloeiende kleurverandering */
+}
+
+.filters button:hover {
+    background-color: var(--button);
+    transform: scale(1.05);   
+}
+
+.filters button:active {
+    background-color: var(--button);
+    transform: scale(0.95);    /* Klik-effect */
+}
+
+
+
+
+
+
+
+
+

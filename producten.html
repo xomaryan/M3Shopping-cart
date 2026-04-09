@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGOFans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav"> 
+            <div class="logo">LEGO<span>Fans</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="producten.html">Sets</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="filters">
+        <button onclick="filtersProducten('alles')">Alle thema's</button>
+        <button onclick="filtersProducten('populair')">Populair</button>
+        <button onclick="filtersProducten('botanicals')">Botanicals</button>
+    </div>
+
+    <section class="producten-grid">
+        <article class="product-card" data-categorie="populair">
+                    <img class="product-image" src="Baroque.webp" alt="Baroque">
+                    <h3>Trevi Fountain</h3>
+                    <p>€159.99</p>
+                    <button class="product-button" onclick="addToCart('Trevi Fountain', 159.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="populair">
+                    <img class="product-image" src="Gardering.webp" alt="Gardering">
+                    <h3>Himeji Castle</h3>
+                    <p>€159.99</p>
+                    <button class="product-button" onclick="addToCart('Himeji Castle', 159.99)">In winkelwagen</button>
+                </article>
+            
+                <article class="product-card" data-categorie="populair">
+                    <img class="product-image" src="Geschiedenisliefhebbers.webp" alt="Geschiedenis">
+                    <h3>Neuschwanstein Castle</h3>
+                    <p>€269.99</p>
+                    <button class="product-button" onclick="addToCart('Neuschwanstein Castle', 269.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="populair">
+                    <img class="product-image" src="LordRings.webp" alt="Lord of the Rings">
+                    <h3>Barad-dûr</h3>
+                    <p>€459.99</p>
+                    <button class="product-button" onclick="addToCart('Barad-dûr', 459.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="populair">
+                    <img class="product-image" src="NoteDameParis.webp" alt="Note Dame Paris">
+                    <h3>Notre-Dame de Paris</h3>
+                    <p>€194.99</p>
+                    <button class="product-button" onclick="addToCart('Notre-Dame de Paris', 194.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="populair">
+                    <img class="product-image" src="StatueOfLiberty.webp" alt="Statue of Liberty">
+                    <h3>Statue of Liberty</h3>
+                    <p>€99.99</p>
+                    <button class="product-button" onclick="addToCart('Statue of Liberty', 99.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="botanicals">
+                    <img class="product-image" src="pinkRoze.webp" alt="pink">
+                    <h3>Bouquet of Pink Roses</h3>
+                    <p>€49.99</p>
+                    <button class="product-button" onclick="addToCart('Bouquet of Pink Roses', 49.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="botanicals">
+                    <img class="product-image" src="rozes.webp" alt="rozes">
+                    <h3>Bouquet of Roses</h3>
+                    <p>€49.99</p>
+                    <button class="product-button" onclick="addToCart('Bouquet of Roses', 49.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="botanicals">
+                    <img class="product-image" src="orhid.webp" alt="orhid">
+                    <h3></h3>
+                    <h3>Orchid</h3>
+                    <p>€49.99</p>
+                    <button class="product-button" onclick="addToCart('Orchid', 49.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="botanicals">
+                    <img class="product-image" src="plum.webp" alt="plum">
+                    <h3>Plum Blossom</h3>
+                    <p>€49.99</p>
+                    <button class="product-button" onclick="addToCart('Plum Blossom', 49.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="botanicals">
+                    <img class="product-image" src="magnolie.webp" alt="magnolie">
+                    <h3>Mangolia Branches</h3>
+                    <p>€49.99</p>
+                    <button class="product-button" onclick="addToCart('Mangolia Branches', 49.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="botanicals">
+                    <img class="product-image" src="kersen.webp" alt="kersen">
+                    <h3>Cherry Blossom Pot</h3>
+                    <p>€49.99</p>
+                    <button class="product-button" onclick="addToCart('Cherry Blossom Pot', 49.99)">In winkelwagen</button>
+                </article>
+
+                <article class="product-card" data-categorie="botanicals">
+                    <img class="product-image" src="flowers.webp" alt="flowers">
+                    <h3>Flower Bouquet</h3>
+                    <p>€49.99</p>
+                    <button class="product-button" onclick="addToCart('Flower Bouquet', 49.99)">In winkelwagen</button>
+                </article>
+
+                <article>
+
+                </article>
+
+        </section>
+
+    <footer>
+        <p>&copy; 2026 LEGO Webshop Project - Gebouwd door Anna-Maria</p>
+    </footer>  
+    
+    <script src="script.js"></script>
+</body>
+</html>

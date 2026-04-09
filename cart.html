@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGOFans</title>
+    <title>Shopping Cart - LEGOFans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav"> 
+            <div class="logo">LEGO<span>Fans</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="producten.html">Sets</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="producten-container">
+        <h2>Jouw Winkelwagen</h2>
+        <table style="width:100%; margin-top: 20px; border-collapse: collapse;">
+            <thead>
+                <tr style="border-bottom: 2px solid #ccc;">
+                    <th style="text-align:left;">Product</th>
+                    <th style="text-align:left;">Aantal</th>
+                    <th style="text-align:left;">Prijs p/s</th>
+                    <th style="text-align:left;">Subtotaal</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                </tbody>
+        </table>
+
+        <div style="margin-top: 30px; text-align: right;">
+            <h3 id="total-price">Totaal: €0.00</h3>
+            <button onclick="localStorage.clear(); location.reload();" class="product-button">Leegmaken</button>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>
