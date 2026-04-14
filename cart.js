@@ -18,4 +18,4 @@ cart.forEach(item => {
     tableBody.appendChild(row);
 });
 
-totalPriceElement.innerText = `Totaal: €${totalSum.toFixed(2)}`;
+totalPriceElement.innerText = `Order Total: €${totalSum.toFixed(2)}`;
